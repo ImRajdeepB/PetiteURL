@@ -1,0 +1,28 @@
+{
+  "name": "petiteurl",
+  "version": "1.0.0",
+  "description": "A URL shortening service in Node.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajdeepbharati/PetiteURL.git"
+  },
+  "author": "Rajdeep Bharati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajdeepbharati/PetiteURL/issues"
+  },
+  "homepage": "https://github.com/rajdeepbharati/PetiteURL#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "nanoid": "^2.0.1"
+  }
+}
