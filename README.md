@@ -2,11 +2,11 @@
 
 A URL shortening service in Node.js
 
-### Demo
+## Demo
 
 ![](demo.gif)
 
-### Getting Started
+## Getting Started
 
 ```
 $ npm install
@@ -33,4 +33,27 @@ Run in production environment:
 
 ```
 $ npm run start
+```
+
+## Endpoints:
+
+### Create new short_url
+
+`POST /new`
+
+Example request body:
+
+```json
+{
+  "url": "https://www.youtube.com/"
+}
+```
+
+Response:
+
+```json
+{
+  "original_url": "https://www.youtube.com/",
+  "short_id": "-f_vN1V"
+}
 ```
