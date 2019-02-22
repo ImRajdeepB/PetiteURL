@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetiteURL</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>PetiteURL</h1>
-    <section class="form-section">
+    <div class="form-section">
         <form class="url-form">
-            <input class="url-input" type="url" name="url" placeholder="Paste a link to shorten" required autofocus>
-            <button type="submit" class="submit-button">Shorten</button>
+            <div class="input-group mb-3">
+                <input type="url" class="form-control form-control-lg url-input" name="url" id="url" placeholder="Paste a link to shorten" aria-label="Paste a link to shorten" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success btn-lg submit-button" type="submit" id="button-addon2">Shorten</button>
+                </div>
+            </div>
         </form>
-    </section>
+    </div>
     <section class="result-section"></section>
+    <div class="fixed-bottom footer">
+        Made with <i class="fa fa-heart" style="font-size: 16px; color: red"></i> by <a href="https://github.com/rajdeepbharati">Rajdeep Bharati</a>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

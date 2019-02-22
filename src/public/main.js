@@ -29,7 +29,7 @@ form.addEventListener('submit', event => {
         'afterbegin',
         `
         <div class="result">
-          <a target="_blank" class="short-url" rel="noopener" 
+          Here's your shortened URL: <a target="_blank" class="short-url" rel="noopener" 
             href="/${data.short_id}">
             ${location.origin}/${data.short_id}
           </a>
